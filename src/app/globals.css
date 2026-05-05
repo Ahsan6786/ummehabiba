@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-icons-outlined {
+    font-size: inherit;
+}
+
+@layer base {
+  :root {
+    --background: 30 20% 98%; /* Even cleaner off-white */
+    --foreground: 30 15% 15%; /* Deep charcoal brown */
+    --card: 0 0% 100%;
+    --card-foreground: 30 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 15% 15%;
+    --primary: 33 27% 85%; /* Elegant beige */
+    --primary-foreground: 30 15% 15%;
+    --secondary: 30 10% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 33 20% 94%;
+    --muted-foreground: 30 10% 45%;
+    --accent: 33 30% 90%;
+    --accent-foreground: 30 15% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 15% 90%;
+    --input: 30 15% 90%;
+    --ring: 30 15% 15%;
+    --radius: 1rem; /* More modern rounded corners */
+  }
+  .dark {
+    --background: 24 10% 8%;
+    --foreground: 30 20% 95%;
+    --card: 24 10% 10%;
+    --card-foreground: 30 20% 95%;
+    --popover: 24 10% 8%;
+    --popover-foreground: 30 20% 95%;
+    --primary: 33 27% 85%;
+    --primary-foreground: 24 10% 8%;
+    --secondary: 24 10% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 24 10% 15%;
+    --muted-foreground: 30 10% 65%;
+    --accent: 24 10% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 10% 15%;
+    --input: 24 10% 15%;
+    --ring: 33 27% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-in-out forwards;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
