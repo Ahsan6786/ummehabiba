@@ -31,7 +31,7 @@ export function Header() {
           ? 'rounded-full shadow-2xl shadow-black/5 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl translate-y-0' 
           : 'rounded-2xl shadow-none'
         }`}>
-        <a href="#home" className="text-xl md:text-2xl font-bold font-display tracking-tight text-black dark:text-white hover:opacity-70 transition-opacity">
+        <a href="#home" className="text-xl md:text-2xl font-black font-display tracking-tight text-zinc-950 hover:opacity-70 transition-opacity whitespace-nowrap">
           Umme <span className="text-primary italic">Habiba</span>
         </a>
         
