@@ -6,6 +6,13 @@ import { Eye, GraduationCap, Award, Briefcase, Database } from "lucide-react";
 const certificatesData = [
   {
     icon: <Briefcase className="h-8 w-8 text-foreground" />,
+    title: "Talent Acquisition: HR Planning, Recruiting & Onboarding",
+    issuer: "Udemy",
+    details: "Online Course",
+    imageSrc: "/udemy.png",
+  },
+  {
+    icon: <Briefcase className="h-8 w-8 text-foreground" />,
     title: "Managing risks in AI & ML",
     issuer: "Global Risk Management Institute",
     details: "A Grade • Dec 2024 - Mar 2025",
