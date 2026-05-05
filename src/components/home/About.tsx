@@ -45,7 +45,7 @@ export function About() {
                 width={800}
                 height={1000}
                 alt="Umme Habiba"
-                className="rounded-xl w-full md:grayscale md:hover:grayscale-0 transition-all duration-700"
+                className="rounded-xl w-full transition-all duration-700 shadow-2xl"
                 priority
               />
             </div>

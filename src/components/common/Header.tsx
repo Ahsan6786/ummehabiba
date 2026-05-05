@@ -20,15 +20,14 @@ export function Header() {
         <a href="#home" className="text-2xl font-bold font-display tracking-tight hover:opacity-80 transition-opacity">
           Umme Habiba
         </a>
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center space-x-1 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-2xl border border-white/20 dark:border-zinc-800/20 rounded-full px-2 py-1.5 shadow-xl shadow-black/5">
           {navLinks.map((link) => (
             <a 
               key={link.href} 
               href={link.href} 
-              className="text-sm font-medium relative group py-1"
+              className="text-xs font-black uppercase tracking-widest px-6 py-2.5 rounded-full transition-all duration-300 hover:bg-foreground hover:text-background text-foreground/70 hover:scale-105 active:scale-95"
             >
               {link.label}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </nav>
