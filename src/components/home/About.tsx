@@ -53,7 +53,7 @@ export function About() {
           <div className="md:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="text-foreground font-bold tracking-[0.2em] uppercase text-sm">Discover</span>
-              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight">About Me</h2>
+              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight text-foreground">About Me</h2>
               <div className="w-20 h-1 bg-primary/40"></div>
             </div>
             

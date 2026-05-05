@@ -6,7 +6,7 @@ const SkillCategory = ({ title, skills, icon: Icon }: { title: string; skills: {
     <div className="w-12 h-12 bg-foreground/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
       <Icon className="text-foreground h-6 w-6" />
     </div>
-    <h3 className="text-2xl font-display font-bold mb-6">{title}</h3>
+    <h3 className="text-2xl font-display font-bold mb-6 text-foreground">{title}</h3>
     <div className="flex flex-wrap gap-3">
       {skills.map((skill, index) => (
         <Badge key={index} variant="secondary" className="bg-muted/50 hover:bg-primary/20 text-foreground transition-colors px-4 py-1.5 rounded-full text-sm font-medium border-none">
@@ -23,7 +23,7 @@ const Achievements = ({ achievements }: { achievements: string[] }) => (
         <div className="relative z-10">
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px flex-grow bg-primary/20"></div>
-            <h3 className="text-2xl font-display font-bold text-center px-4">Key Achievements</h3>
+            <h3 className="text-2xl font-display font-bold text-center px-4 text-foreground">Key Achievements</h3>
             <div className="h-px flex-grow bg-primary/20"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

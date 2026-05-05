@@ -66,7 +66,7 @@ export function Certificates() {
                     {cert.icon}
                   </div>
                   <div className="flex-grow space-y-1">
-                    <h3 className="text-xl md:text-2xl font-display font-bold group-hover:text-primary transition-colors">{cert.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors">{cert.title}</h3>
                     <div className="flex flex-wrap justify-center sm:justify-start items-center gap-x-4 gap-y-1 text-sm text-muted-foreground font-medium">
                       <span>{cert.issuer}</span>
                       <div className="hidden sm:block w-1 h-1 rounded-full bg-border"></div>
@@ -86,7 +86,7 @@ export function Certificates() {
               {cert.imageSrc && (
                 <DialogContent className="max-w-4xl p-2 bg-background/95 backdrop-blur-xl border-border/40">
                   <DialogHeader>
-                    <DialogTitle className="text-2xl font-display font-bold px-4 pt-4">{cert.title}</DialogTitle>
+                    <DialogTitle className="text-2xl font-display font-bold px-4 pt-4 text-foreground">{cert.title}</DialogTitle>
                   </DialogHeader>
                   <div className="p-2">
                     <Image
