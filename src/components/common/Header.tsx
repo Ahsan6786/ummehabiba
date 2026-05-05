@@ -29,7 +29,7 @@ export function Header() {
       ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}>
       <div className={`w-full max-w-7xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 pointer-events-auto flex justify-between items-center px-6 py-3 rounded-full shadow-2xl shadow-black/10 backdrop-blur-xl`}>
         <a href="#home" className="text-xl md:text-2xl font-black font-display tracking-tight text-zinc-950 hover:opacity-70 transition-opacity whitespace-nowrap">
-          Umme <span className="text-primary italic">Habiba</span>
+          Umme <span className="italic">Habiba</span>
         </a>
         
         <nav className="hidden md:flex items-center gap-1">
